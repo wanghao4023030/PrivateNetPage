@@ -7,51 +7,44 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="Pragma" content="no-cache">
         <meta http-equiv="Cache-Control" content="no-cache">
-
-        <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">  
+        <!--<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">  
         <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
-        <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <title> My main page </title>
+        <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+        <link rel="stylesheet" href=".//css/bootstrap.min.css">  
+        <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src=".//js/bootstrap.min.js"></script>
+        <title> Ralf&Rachel home </title>
   </head>
 
 <body>
-    <h1> This is my first page </h1>
+<!--The welcome header-->
+<div class="page-header">
+      <h1 align= "center"> Welcome <small>to our home</small>!</h1>
+</div>
 
-      <div class="container" id="content" >
-          <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-        <button type="button" class="btn btn-primary">Primary</button>
+<!--main image div-->
+<div class="container" align-items="center">
+    <!--<a href = "http://www.sina.com" target = "_blank" align = "center" >-->
+        <center><img src = ".//img/Koala.jpg" class="img-rounded" alt = "My Home" style="position:relative;width:50%;height:50%;margin: 0 auto; " ></center>
+    <!--</a>-->
+</div>
 
-        <!-- Secondary, outline button -->
-        <button type="button" class="btn btn-secondary">Secondary</button>
+<!--Button group-->
+<div class="container" align-items="center">
+    <a href="http://www.sina.com.cn" class="btn btn-primary btn-lg btn-block" role="button" style="width:50%;margin: 0 auto;" aria-pressed="true">Enter</a>
+    <!--<button class="btn btn-secondary btn-lg btn-block" style="width:50%;margin: 0 auto;" aria-pressed="true" onclick="closewindows()">Exit</button>-->
+</div>
 
-        <!-- Indicates a successful or positive action -->
-        <button type="button" class="btn btn-success">Success</button>
-
-        <!-- Contextual button for informational alert messages -->
-        <button type="button" class="btn btn-info">Info</button>
-
-        <!-- Indicates caution should be taken with this action -->
-        <button type="button" class="btn btn-warning">Warning</button>
-
-        <!-- Indicates a dangerous or potentially negative action -->
-        <button type="button" class="btn btn-danger">Danger</button>
-
-        <!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
-        <button type="button" class="btn btn-link">Link</button>
-      </div>
-
-<h1>我的第一个 JavaScript 程序</h1>
-<p id="demo">这是一个段落</p>
-
-<button type="button" class="btn btn-info"onclick="displayDate()">显示日期</button>
 
 
 </body>
 
 <script>
 function displayDate(){
-	document.getElementById("demo").innerHTML=Date();
+  window.close();
 }
+
+
 </script>
 
 

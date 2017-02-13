@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Pragma" content="no-cache">
+        <meta http-equiv="Cache-Control" content="no-cache">
+
+        <title> Ralf&Rachel home </title>
+
+        <!--<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">  
+        <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+        
+        <!--<script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.js"></script>
+        <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.css" rel="stylesheet">
+        <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>-->
+
+
+        <link rel="stylesheet" href="../css/bootstrap.css">  
+        <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="../js/bootstrap.js"></script>
+
+        <style type="text/css">
+            body {background-color:white}
+            p {
+                margin-left: 2em;
+                word-wrap: break-word;}
+        </style>
+
+
+</head>
+
+<body onload="showContent('divContent','home_div_Home')" >
+
+<!--navgator control-->
+<nav id = "mainNavbar" class="navbar navbar-default" >
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Ralf&Rachel</a>
+        </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><button type="button" class="btn btn-link navbar-btn" onclick="showContent('divContent','home_div_Home')">Home</button> </li>
+                <li><button type="button" class="btn btn-link navbar-btn" onclick="showContent('divContent','home_div_Ralf')">Ralf Wang</button> </li> 
+                <li><button type="button" class="btn btn-link navbar-btn" onclick="showContent('divContent','home_div_Rachel')">Rachel Shi </button></li> 
+                <li><button type="button" class="btn btn-link navbar-btn" onclick="showContent('divContent','home_div_life')">Our life</button> </li> 
+                <li><button type="button" class="btn btn-link navbar-btn" onclick="showContent('divContent','home_div_Contract')">Contract US</button> </li> 
+            </ul>
+    </div>
+</nav>
+
+<div id="divContent" class="container" style="display:none;">
+    <p>I`m the Boss!</p>
+</div>
+
+<!--navgator home content-->
+<div1 id ="home_div_Home" class="container" style="display:none;">
+    <div class="row">
+        <div class="span6">
+            <!--<h1>Introduction</h1>-->
+            <section>
+                 <h2>This is our private web site, you can visit this to know our work and daily life.<br></h2>
+            </section>
+        </div>
+    </div>
+</div>
+
+
+<div id ="home_div_Ralf" class="container" style="display:none;"> 
+    <div class="row">
+        <div class="span6">
+            <h1>Ralf</h1>
+            <section>
+                 <p>Ralf<br></p>
+                 
+            </section>
+        </div>
+    </div>
+</div>  
+
+<div id ="home_div_Rachel" class="container" style="display:none;"> 
+    <div class="row">
+        <div class="span6">
+            <h1>Rachel</h1>
+            <section>
+                 <p>Rachel<br></p>
+                 
+            </section>
+        </div>
+    </div>
+</div>  
+
+<div id ="home_div_Contract" class="container" style="display:none;"> 
+    <div class="row">
+        <div class="span6">
+            <h1>ConnectUS</h1>
+            <section>
+                 <p>ConnectUS<br></p>
+                 
+            </section>
+        </div>
+    </div>
+</div>  
+
+
+<div id ="home_div_life" class="container" style="display:none;"> 
+    <div class="row">
+        <div class="span6">
+            <h1>Life</h1>
+            <section>
+                 <p>Life<br></p>
+                 
+            </section>
+        </div>
+    </div>
+</div>  
+
+
+</body>
+
+<script>
+
+function showContent(target,source){
+    document.getElementById(target).innerHTML = document.getElementById(source).innerHTML;
+    document.getElementById(target).style.display="block";
+    
+}
+
+function hideAll(){
+    document.getElementById('divContent').style.display="none";
+    document.getElementById('home_div_Home').style.display="none";
+    document.getElementById('home_div_Ralf').style.display="none";
+    document.getElementById('home_div_Rachel').style.display="none";
+    document.getElementById('home_div_Contract').style.display="none";
+    document.getElementById('home_div_life').style.display="none";
+}
+
+
+
+
+
+</script>
+
+
+
+
+</html>

@@ -10,10 +10,23 @@
         <!--<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">  
         <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
         <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
-        <link rel="stylesheet" href=".//css/bootstrap.min.css">  
+
+        <!--<script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.js"></script>
+        <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.css" rel="stylesheet">
+        <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>-->
+
+        <link rel="stylesheet" href="./css/bootstrap.min.css">  
         <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
-        <script src=".//js/bootstrap.min.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
         <title> Ralf&Rachel home </title>
+        
+        <style type="text/css">
+            body {background-color:white}
+            p {
+                margin-left: 2em;
+                word-wrap: break-word;}
+        </style>
+
   </head>
 
 <body>
@@ -22,19 +35,82 @@
       <h1 align= "center"> Welcome <small>to our home</small>!</h1>
 </div>
 
-<!--main image div-->
-<div class="container" align-items="center">
-    <!--<a href = "http://www.sina.com" target = "_blank" align = "center" >-->
-        <center><img src = ".//img/Koala.jpg" class="img-rounded" alt = "My Home" style="position:relative;width:50%;height:50%;margin: 0 auto; " ></center>
-    <!--</a>-->
+<!--Home carousel content-->
+<div class="container" align-items="center" style="width:50%;margin: 0 auto">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000" >
+
+             <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+            <!--Item-->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <a href="./Mypage/../page/mainpage_new.html">
+                        <img  class="d-block img-fluid" src="./img/Desert.jpg" alt="Home page">
+                            <div class="carousel-caption">
+                                    <h3>Us</h3>
+                                    <p>This is our home page,please enjoy it.</p>
+                                </div>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="./Mypage/../page/mainpage_new.html">
+                        <img  class="d-block img-fluid" src="./img/Hydrangeas.jpg" alt="Ralf Wang">
+                            <div class="carousel-caption">
+                                    <h3>Ralf Wang</h3>
+                                    <p>I`m software quality engineer for 10 years.</p>
+                                </div>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="./Mypage/../page/mainpage_new.html">
+                        <img  class="d-block img-fluid" src="./img/Lighthouse.jpg" alt="Rachel shi">
+                                <div class="carousel-caption">
+                                    <h3>Rachel Shi</h3>
+                                    <p>I`m aduit manage for 7 years.</p>
+                                </div>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="./Mypage/../page/mainpage_new.html">
+                        <img class="d-block img-fluid" src="./img/Koala.jpg" alt="Contract">
+                                <div class="carousel-caption">
+                                    <h3>Contract US</h3>
+                                    <p>Please add our Wechat accounr or send us mail.</p>
+                                </div>
+                    </a>               
+                </div>
+
+            </div>
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+    </div>   
 </div>
 
-<!--Button group-->
-<div class="container" align-items="center">
-    <a href="http://www.sina.com.cn" class="btn btn-primary btn-lg btn-block" role="button" style="width:50%;margin: 0 auto;" aria-pressed="true">Enter</a>
-    <!--<button class="btn btn-secondary btn-lg btn-block" style="width:50%;margin: 0 auto;" aria-pressed="true" onclick="closewindows()">Exit</button>-->
-</div>
 
+
+
+<div class="page-footer">
+    <div class="container" align-items="center" style="width:50%;margin: 0 auto;">
+        <hr>
+        <a href="./Mypage/../page/mainpage.html" class="btn btn-primary btn-lg btn-block" role="button"  aria-pressed="true">Enter</a>
+        <!--<button class="btn btn-secondary btn-lg btn-block" style="width:50%;margin: 0 auto;" aria-pressed="true" onclick="closewindows()">Exit</button>-->
+    </div>
+</div>    
 
 
 </body>

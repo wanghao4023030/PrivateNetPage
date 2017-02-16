@@ -55,16 +55,49 @@
 </div>
 
 <!--navgator home content-->
-<div1 id ="home_div_Home" class="container" style="display:none;">
+<div id ="home_div_Home" class="container-fluid" style="display:none;">
     <div class="row">
         <div class="span6">
-            <!--<h1>Introduction</h1>-->
             <section>
-                 <h2>This is our private web site, you can visit this to know our work and daily life.<br></h2>
+                <h1>Welcome,<small>our friends</small></h1>
             </section>
         </div>
     </div>
+
+    <div id="homeFooter" class="container">
+        <pre> 
+            This is our private page for Ralf and Rachel. You can know our career and daily life!
+            Please view the page and contract us as free.
+        </pre>    
+    </div>
+
+    <hr></hr>
+
+    <div id="homeRalfDetail" calss="container-fluid">
+        <div class="row">
+            <div class="span14">
+                <div class="col-xs-12 col-sm-12 col-lg-12">
+                        <img src="../img/Ralf.png" alt="png_RalfWang" class="img-rounded" style="float:left;width:30%;marign:2em 2em 2em 2em;">
+                        <div id="home_ralf_introdation" class="container-fluid" >
+                            <h4><strong>Ralf Wang  王浩</strong></h4> 
+                            <p>Who borned at 7th Jan 1984. Has almost 11 years experiments on software quality engineer.</p>
+                            <p>Focus on the function, performance and automation testing. Good at the bug manage tool(QC,Jira) and automation test tool(Loadrunner,QTP,TestComplete,soapUI,AutoIT,selenium and etc).
+                               Has basic knownledge on database to write the SQL statement and tuning the performance.</p>
+                            <p>Worked for Freesky technology, Perkinelmer and Carstream healthcare company.Has outstanding experiments on software testing and service supporting works.</p>
+                            <p>Like play soccer and ping pang in the sparetime life.</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
 </div>
+
+
+
 
 
 <div id ="home_div_Ralf" class="container" style="display:none;"> 
@@ -122,6 +155,11 @@
 <script>
 
 function showContent(target,source){
+
+    if(window.location.search.indexOf("?")<0){ //判断是否是第一次加载
+        window.location.href="mainpage_new.html?1";
+    } else{}  //第二次加载空操作
+
     document.getElementById(target).innerHTML = document.getElementById(source).innerHTML;
     document.getElementById(target).style.display="block";
     
